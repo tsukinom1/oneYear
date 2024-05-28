@@ -1,0 +1,147 @@
+
+/*--------overall-----------*/
+*{
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+
+.body-scroll-lock{
+  overflow: hidden;
+}
+.none {
+  display: none;
+}
+
+.container{
+  max-width: 390px;
+  margin: 0  auto;
+}
+
+.main-title{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/*-form-*/
+.registerForm {
+  z-index: 10;
+  padding: 10px 30px 10px 10px;
+  position: fixed;
+  top: 40%;
+  left: 45%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  .register-input {
+    width: 150px;
+    height: 30px;
+    padding: 0 10px;
+  }
+
+  .register-button {
+    width: 100px;
+    height: 30px;
+  }
+
+  .close {
+    position: absolute;
+    top: 7%;
+    right: 3%;
+    font-size: 30px;
+    cursor: pointer;
+  }
+}
+
+
+.content {
+  //background: linear-gradient(90deg, rgba(183,20,215,1) 0%, rgba(114,28,189,1) 35%, rgba(35,14,120,1) 100%);;
+  background: gray;
+  .header {
+    .container{
+      .header__nav{
+        .nav__list{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 50px;
+          .nav__item{
+            .nav__link{
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .main {
+    .container {
+      .section-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        flex-wrap: wrap;
+
+
+        .section1-img{
+          width: 350px;
+          height: 350px;
+        }
+      }
+      .swiper {
+        width: 390px;
+        height: 350px;
+
+        .swiper-wrapper {
+
+          .swiper-slide {
+            padding: 30px;
+          }
+        }
+
+        .swiper-button-prev {
+
+        }
+
+        --swiper-navigation-size: 14px;
+
+        .swiper-button-next {
+
+        }
+
+        .swiper-scrollbar {
+
+        }
+      }
+      .section-3{
+
+        .memories{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 15px;
+          flex-wrap: wrap;
+
+          .memories-img{
+            width: 165px;
+            height: 140px;
+            cursor: pointer;
+          }
+          .memories-img:hover{
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+  }
+}
