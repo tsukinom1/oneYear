@@ -1,4 +1,6 @@
-
+AOS.init({
+    disable: false,
+});
 
 // document.body.classList.add('body-scroll-lock');
 
@@ -97,6 +99,20 @@ memoryEightButton.addEventListener('click', (e) => {
     memoryEightDescription.classList.toggle('none');
 });
 
+const buttonPhoto = document.querySelector('.buttonPhoto');
+const buttonPhotoImg = document.querySelector('#buttonPhotoImg');
+buttonPhoto.addEventListener('click', (e) => {
+    e.preventDefault();
+    buttonPhotoImg.classList.toggle('none');
+})
+
+const letterButton = document.querySelector('.letter-button');
+const letterContent = document.querySelector('.letter-content')
+letterButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    letterContent.classList.toggle('none');
+})
+
 
 const swiper = new Swiper('.swiper', {
     loop: true,
@@ -104,7 +120,11 @@ const swiper = new Swiper('.swiper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
 });
+
 
 
 
