@@ -21,7 +21,7 @@ ul {
 }
 
 .container {
-  max-width: 720px;
+  width: 720px;
   margin: 0 auto;
 }
 
