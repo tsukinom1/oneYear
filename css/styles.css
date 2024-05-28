@@ -21,7 +21,7 @@ ul {
 }
 
 .container {
-  max-width: 390px;
+  max-width: 720px;
   margin: 0 auto;
 }
 
@@ -80,12 +80,12 @@ ul {
   flex-wrap: wrap;
 }
 .content .main .container .section-1 .section1-img {
-  width: 350px;
-  height: 350px;
+  width: 700px;
+  height: 700px;
 }
 .content .main .container .swiper {
-  width: 390px;
-  height: 350px;
+  width: 700px;
+  height: 500px;
   --swiper-navigation-size: 14px;
 }
 .content .main .container .swiper .swiper-wrapper .swiper-slide {
@@ -99,8 +99,8 @@ ul {
   flex-wrap: wrap;
 }
 .content .main .container .section-3 .memories .memories-img {
-  width: 165px;
-  height: 140px;
+  width: 320px;
+  height: 320px;
   cursor: pointer;
 }
 .content .main .container .section-3 .memories .memories-img:hover {
