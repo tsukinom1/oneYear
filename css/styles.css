@@ -21,13 +21,18 @@ ul {
 }
 
 .container {
-  width: 720px;
+  width: 820px;
   margin: 0 auto;
 }
 
-.main-title {
+.h1 {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+}
+
+.h2 {
+  text-align: center;
+  margin-bottom: 5px;
 }
 
 /*-form-*/
@@ -80,15 +85,15 @@ ul {
   flex-wrap: wrap;
 }
 .content .main .container .section-1 .section1-img {
-  width: 700px;
-  height: 700px;
+  width: 750px;
+  height: 750px;
   overflow: hidden;
   object-fit: cover;
   object-position: center;
 }
 .content .main .container .swiper {
-  width: 700px;
-  height: 500px;
+  width: 750px;
+  height: 600px;
   --swiper-navigation-size: 14px;
 }
 .content .main .container .swiper .swiper-wrapper .swiper-slide {
@@ -97,17 +102,31 @@ ul {
 .content .main .container .section-3 .memories {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 15px;
   flex-wrap: wrap;
 }
-.content .main .container .section-3 .memories .memories-img {
-  width: 320px;
-  height: 320px;
-  cursor: pointer;
+.content .main .container .section-3 .memories .memory {
+  max-width: 350px;
 }
-.content .main .container .section-3 .memories .memories-img:hover {
-  transform: scale(1.05);
+.content .main .container .section-3 .memories .memory .memories-img {
+  width: 350px;
+  height: 370px;
+  cursor: pointer;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+}
+.content .main .container .section-3 .memories .memory .memories-img:hover {
+  transform: scale(1.03);
+}
+.content .main .container .section-3 .memories .memory .descriptionOfMemory {
+  transition: all 0.3s ease-in-out;
+}
+.content .main .container .section-3 .memories .memory .text {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
