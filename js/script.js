@@ -37,20 +37,19 @@ formButton.onclick = function (e) {
     }
 };
 
-const links = document.querySelectorAll('a[href*="#"]');
-for (let link of links) {
-    link.addEventListener('click', (e) => {
+
+
+document.querySelectorAll('.nav__link').forEach(link => {
+    link.addEventListener('click', function(e) {
         e.preventDefault();
-        const blockId = link.getAttribute('href').substring(1); // Убираем символ #
-        const targetElement = document.getElementById(blockId); // Ищем элемент по ID
-        if (targetElement) {
-            targetElement.scrollIntoView({
-                behavior: "smooth",
-                block: "start"
-            });
-        }
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: 'smooth'
+        });
     });
-}
+});
 
 
 

@@ -96,7 +96,11 @@ ul{
         .section1-img{
           width: 700px;
           height: 700px;
+          overflow: hidden;
+          object-fit: cover;
+          object-position: center;
         }
+
       }
       .swiper {
         width: 700px;
